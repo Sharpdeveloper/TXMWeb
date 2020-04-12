@@ -1,18 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import Layout from 'Components/UI/Layout/Layout.tsx';
 
 function App() {
   const text: string = 'Hallo!';
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        {text}
-      </header>
+      <Layout />
+      {text}
     </div>
   );
 }
